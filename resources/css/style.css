@@ -1,7 +1,103 @@
+/* Main */
 html {
 
 }
 
 body {
-  
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+button {
+  margin: 1.5rem 1rem 2rem;
+  width: 100%;
+  height: 3rem;
+  background-color: gray;
+}
+
+button h4 {
+  color: white;
+  padding: auto;
+  font-weight: bold;
+}
+
+img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* General classes */
+.container {
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Multi use */
+h1, h3, h4, button, p, span {
+  color: black;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  line-height: 1.5em;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 4rem;
+}
+
+.mnav {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.mnav ul {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.mnav img {
+  height: 2.2rem;
+}
+
+.mnav li {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+/* Turned off while building mobile */
+.company {
+  display: none;
+}
+
+/* Banner */
+.banner {
+  background-color: lightgray;
+}
+
+.banner img {
+  height: 180px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Information */
+.information img {
+  height: 180px;
+  width: 100%;
 }

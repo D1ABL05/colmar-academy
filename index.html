@@ -3,27 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img src="resources/images/ic-logo.svg">
-      <span>Colmar Academy</span>
-      <nav>
+      <div class="company">
+        <img src="resources/images/ic-logo.svg">
+        <span>Colmar Academy</span>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav class="mnav">
+        <ul>
+          <li><a href="#"><img src="resources/images/ic-logo.svg"></a></li>
+          <li><a href="#"><img src="resources/images/ic-on-campus.svg"></a></li>
+          <li><a href="#"><img src="resources/images/ic-online.svg"></a></li>
+          <li><a href="#"><img src="resources/images/ic-login.svg"></a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Nav -->
+      <!--
+      <nav class="dnav">
         <li><a href="#">On Campus</a></li>
         <li><a href="#">Online</a></li>
         <li><a href="#">For Companies</a></li>
         <li><a href="#"></a>Sign in</li>
       </nav>
+    -->
     </header>
 
     <div class="banner">
       <img src="resources/images/banner.jpg">
       <h1>Learn Something New Everyday</h1>
       <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      <button type="button">Start here</button>
+      <button type="button"><h4>Start here</h4></button>
     </div>
 
-    <div class="information">
+    <div class="information container">
       <div class="content1">
         <img src="resources/images/information-main.jpg">
         <h1>It doesn't hurt to keep practicing</h1>
@@ -124,14 +143,14 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <footer>
+    <footer>
         <span>2016 Colmar Academy. All rights reserved<span>
         <nav>
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>
         </nav>
-      </footer>
-    </div>
+    </footer>
   </body>
 </html>
