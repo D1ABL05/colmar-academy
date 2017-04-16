@@ -10,8 +10,8 @@ body {
 
 h1 {
   margin-top: 2rem;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 h3 {
@@ -20,9 +20,14 @@ h3 {
   margin-top: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: blue;
+}
+
 button {
   margin: 1.5rem 1rem 2rem;
-  width: 100%;
+  width: 90%;
   height: 3rem;
   background-color: gray;
 }
@@ -40,17 +45,17 @@ img {
 
 /* General classes */
 .container {
-  width: 100%;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
 /* Multi use */
-h1, h3, h4, button, p, span {
-  color: black;
+h1, h3, h4, button, p, span, a {
+  /* Disabling for now
   margin-left: 1rem;
   margin-right: 1rem;
   line-height: 1.5em;
+  */
 }
 
 /* Header */
@@ -79,7 +84,7 @@ header {
   justify-content: space-between;
 }
 
-/* Turned off while building mobile */
+/* TURNED OFF FOR MOBILE BUILD */
 .company {
   display: none;
 }
@@ -99,5 +104,38 @@ header {
 /* Information */
 .information img {
   height: 180px;
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Content 1 */
+/* TURNED OFF FOR MOBILE BUILD */
+.content1 {
+  display: none;
+}
+
+/* Course */
+.course {
+  margin-top: 2rem;
+  border-top: solid 1px lightgray;
   width: 100%;
+}
+
+.course h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* TURNED OFF FOR MOBILE BUILD */
+.course img, .course h5, .course p {
+  display: none;
+}
+
+.courses h3 {
+  background-color: lightgray;
+  text-align: left;
+  padding: 1.5rem 0 1.5rem 1rem;
+  margin-top: .5rem;
 }
