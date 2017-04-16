@@ -1,4 +1,7 @@
 /* Main */
+
+/* DESIGN NOTE: 400PX MIGHT BE GOOD BREAKPOINT */
+
 html {
 
 }
@@ -138,4 +141,46 @@ header {
   text-align: left;
   padding: 1.5rem 0 1.5rem 1rem;
   margin-top: .5rem;
+}
+
+/* Thesis */
+/* TURNED OFF FOR MOBILE BUILD */
+.content1, .content2 {
+  display: none;
+}
+
+.thesis {
+  margin-top: 2rem;
+
+  border-top: solid 1px lightgray;
+  width: 100%;
+}
+
+.thesis h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vid {
+  height: 240px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* Footer */
+/*TURNED OFF FOR MOBILE BUILD */
+footer nav {
+  display: none;
+}
+
+footer {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+footer span {
+  margin: 1rem 0 1.5rem 0;
+  text-align: left;
+  align-content: center;
 }
