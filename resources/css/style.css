@@ -335,9 +335,10 @@ h1, h3, h4, button, p, span, a {
 
   .courses {
     background-color: white;
+    height: 360px;
     width: 30%;
-    height: auto;
-    display: inline-grid;
+    display: inline-table;
+    margin: .75rem;
   }
 
   .courses img {
@@ -348,18 +349,24 @@ h1, h3, h4, button, p, span, a {
 
   .course-text {
     text-align: left;
-    font-size: 1rem;
+    margin-top: 1rem;
+    width: 85%
+  }
+
+  .course-text h5, .course-text p {
+    padding-left: .5rem;
+    margin-top: .5rem;
   }
 
   .course-text h3 {
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 1rem;
+    padding-left: .5rem;
     margin-top: 0;
   }
 
-  .course-text h5, .course-text p {
-    margin: .5rem 0 0 1rem;
+  .course-text p {
+    padding-bottom: 0;
   }
 }
 
@@ -391,26 +398,14 @@ h1, h3, h4, button, p, span, a {
 }
 
 @media screen and (min-width: 600px) {
-  .thesis {
-    margin-top: 2rem;
-    width: 100%;
-  }
-
-  .thesis .container {
+  .thesis .row {
     display: inline-flex;
   }
 
-  .thesis h1 {
+  .thesis h1:first-child {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
-  .vid {
-    height: 60%;
-    width: 100%;
-    display: inline-flex;
-    margin: auto;
-  }
+
 }
 /* Footer */
 @media screen and (max-width: 600px) {
