@@ -306,6 +306,7 @@ h1, h3, h4, button, p, span, a {
     width: 100%;
     background-color: lightgray;
     text-align: center;
+    padding-bottom: 2rem;
   }
 
   .course h1 {
@@ -344,43 +345,89 @@ h1, h3, h4, button, p, span, a {
 }
 
 /* Thesis */
-/* TURNED OFF FOR MOBILE BUILD */
-.thesis-content1, .thesis-content2 {
-  display: none;
+@media screen and (max-width: 600px) {
+  .thesis-content1, .thesis-content2 {
+    display: none;
+  }
+
+  .thesis {
+    margin-top: 2rem;
+
+    border-top: solid 1px lightgray;
+    width: 100%;
+  }
+
+  .thesis h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .vid {
+    height: 240px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-.thesis {
-  margin-top: 2rem;
+@media screen and (min-width: 600px) {
+  .thesis {
+    margin-top: 2rem;
+    width: 100%;
+  }
 
-  border-top: solid 1px lightgray;
-  width: 100%;
-}
+  .thesis .container {
+    display: inline-flex;
+  }
 
-.thesis h1 {
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.vid {
-  height: 240px;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  .thesis h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .vid {
+    height: 60%;
+    width: 100%;
+    display: inline-flex;
+    margin: auto;
+  }
 }
 /* Footer */
-/*TURNED OFF FOR MOBILE BUILD */
-footer nav {
-  display: none;
+@media screen and (max-width: 600px) {
+  footer nav {
+    display: none;
+  }
+
+  footer {
+    margin-top: 1.5rem;
+    display: flex;
+  }
+
+  footer span {
+    margin: 1rem 0 1.5rem 0;
+    text-align: left;
+    align-content: center;
+  }
 }
 
-footer {
-  margin-top: 1.5rem;
-  display: flex;
-}
+@media screen and (min-width: 600px) {
+  footer {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 4rem;
+    border-top: solid 1px lightgray;
+  }
 
-footer span {
-  margin: 1rem 0 1.5rem 0;
-  text-align: left;
-  align-content: center;
+  footer .container {
+    margin-top: 1rem;
+  }
+
+  footer span {
+    text-align: left;
+    align-content: center;
+  }
+  footer .dnav {
+    margin-top: 0;
+  }
 }
