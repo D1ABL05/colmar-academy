@@ -18,6 +18,16 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: auto 0;
+}
+
+h2 span {
+  color: lightgray;
+}
+
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -64,6 +74,14 @@ h1, h3, h4, button, p, span, a {
 }
 
 /* Header */
+
+
+/* Nav Bars */
+@media screen and (max-width: 600px) {
+.dnav, .company {
+  display: none;
+}
+
 header {
   width: 100%;
   height: 4rem;
@@ -90,10 +108,42 @@ header {
   display: inline-flex;
   padding: 0 .75rem;
 }
+}
 
-/* TURNED OFF FOR MOBILE BUILD */
-.company {
-  display: none;
+@media screen and (min-width: 600px) {
+  .mnav {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    background-color: white;
+    align-content: center;
+  }
+
+  .company {
+    display: inline-flex;
+    float: left;
+    margin: .5rem 0;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .dnav {
+    display: inline-flex;
+    list-style: none;
+    text-decoration: none;
+    float: right;
+    margin: .8rem 0;
+  }
+
+  .dnav li {
+    margin-right: 1rem;
+  }
 }
 
 /* Banner */
