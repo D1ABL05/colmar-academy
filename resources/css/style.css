@@ -1,7 +1,6 @@
-/* Main */
+/* Breakpoints - 600+: Desktop; 400-600: Tablet; 400-: Mobile */
 
-/* DESIGN NOTE: 420PX and 600PX are BREAKPOINT */
-
+/*-----Base-----*/
 html {
 
 }
@@ -12,6 +11,7 @@ body {
   line-height: 1.5;
 }
 
+/*-----Headings-----*/
 h1 {
   margin-top: 2rem;
   font-size: 2.5rem;
@@ -24,21 +24,19 @@ h2 {
   margin: auto 0;
 }
 
-h2 span {
-  color: lightgray;
-}
-
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 2rem;
 }
 
+/*-----Links-----*/
 a {
   text-decoration: none;
 }
 
 a:hover {
+  transition: color .7s;
   color: gray;
 }
 
@@ -46,11 +44,17 @@ a:active {
   color: darkgrey;
 }
 
+/*-----Button-----*/
 button {
   margin-top: 2rem;
   width: 100%;
   height: 3rem;
   background-color: gray;
+}
+
+button:hover {
+  transition: color 1.2s;
+  background-color: darkgray;
 }
 
 button h3 {
@@ -60,31 +64,21 @@ button h3 {
   margin-top: 0;
 }
 
+/*-----Images-----*/
 img {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-/* General classes */
+/*-----General Classes-----*/
 .container {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-/* Multi use */
-h1, h3, h4, button, p, span, a {
-  /* Disabling for now
-  margin-left: 1rem;
-  margin-right: 1rem;
-  line-height: 1.5em;
-  */
-}
-
-/* Header */
-
-
-/* Nav Bars */
+/*-----Header Mobile-----*/
 @media screen and (max-width: 600px) {
+  /*-----Disabled for Breakpoint-----*/
   .dnav, .company {
     display: none;
   }
@@ -117,7 +111,9 @@ h1, h3, h4, button, p, span, a {
   }
 }
 
+/*-----Header Desktop-----*/
 @media screen and (min-width: 600px) {
+  /*-----Disabled for Breakpoint-----*/
   .mnav {
     display: none;
   }
@@ -153,7 +149,7 @@ h1, h3, h4, button, p, span, a {
   }
 }
 
-/* Banner */
+/*-----Banner Mobile-----*/
 @media screen and (max-width: 600px) {
   .banner {
     background-color: lightgray;
@@ -172,6 +168,7 @@ h1, h3, h4, button, p, span, a {
   }
 }
 
+/*-----Banner Desktop-----*/
 @media screen and (min-width: 600px) {
   .banner {
     background-color: lightgray;
@@ -194,17 +191,17 @@ h1, h3, h4, button, p, span, a {
 }
 
 
-/* Information */
+/*-----Information Mobile-----*/
 @media screen and (max-width: 600px) {
+  /*-----Disabled for Breakpoint-----*/
+  .information .content1 {
+    display: none;
+  }
+
   .information img {
     height: 200px;
     width: 90%;
-    margin: auto;
-    display: block;
-  }
-  /* Content */
-  .content1 {
-    display: none;
+    margin: 1rem;
   }
 
   .content2 {
@@ -214,14 +211,21 @@ h1, h3, h4, button, p, span, a {
   .posts h3, .posts h4, .posts a {
     margin-left: 2rem;
     margin-right: 2rem;
-    line-height: 2rem;
+    line-height: 2rem
+    width: 100%;
   }
 
-  .posts h4 {
-    font-weight: normal;
+  .posts h3 {
+    font-weight: 800;
+    margin-top: .5rem;
+  }
+
+  .posts a {
+    color: blue;
   }
 }
 
+/*-----Information Desktop-----*/
 @media screen and (min-width: 600px) {
   .information {
     display: inline-flex;
@@ -233,7 +237,7 @@ h1, h3, h4, button, p, span, a {
     display: inline-flex;
     margin: auto;
   }
-  /* Content */
+
   .content1 {
     height: 100%;
     width: 60%;
@@ -259,7 +263,6 @@ h1, h3, h4, button, p, span, a {
     border-left: solid 1px lightgray;
   }
 
-/* Posts */
   .posts {
     display: inline-flex;
     border-top: solid .5px lightgray;
@@ -291,9 +294,13 @@ h1, h3, h4, button, p, span, a {
   }
 }
 
-
-/* Course */
+/*-----Course Mobile-----*/
 @media screen and (max-width: 600px) {
+  /*-----Disabled for Breakpoint-----*/
+  .course img, .course h5, .course p {
+    display: none;
+  }
+
   .course {
     margin-top: 2rem;
     border-top: solid 1px lightgray;
@@ -306,19 +313,19 @@ h1, h3, h4, button, p, span, a {
     margin-bottom: 2rem;
   }
 
-  /* TURNED OFF FOR MOBILE BUILD */
-  .course img, .course h5, .course p {
-    display: none;
-  }
-
   .courses h3 {
     background-color: lightgray;
     text-align: left;
     padding: 1.5rem 0 1.5rem 1rem;
     margin-top: .5rem;
   }
+
+  .courses h3:hover {
+    background-color: gray;
+  }
 }
 
+/*-----Course Desktop-----*/
 @media screen and (min-width: 600px) {
   .course {
     margin: 1rem .5rem;
@@ -370,17 +377,18 @@ h1, h3, h4, button, p, span, a {
   }
 }
 
-/* Thesis */
+/*-----Thesis Mobile-----*/
 @media screen and (max-width: 600px) {
-  .thesis-content1, .thesis-content2 {
+  /*-----Disabled for Breakpoint-----*/
+  .thesis .content1 h1, .thesis .content1 p, .thesis .content2 {
     display: none;
   }
 
   .thesis {
     margin-top: 2rem;
-
     border-top: solid 1px lightgray;
     width: 100%;
+    text-align: center;
   }
 
   .thesis h1 {
@@ -388,15 +396,9 @@ h1, h3, h4, button, p, span, a {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-
-  .vid {
-    height: 240px;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 
+/*-----Thesis Desktop-----*/
 @media screen and (min-width: 600px) {
   .thesis .row {
     display: inline-flex;
@@ -407,8 +409,9 @@ h1, h3, h4, button, p, span, a {
   }
 
 }
-/* Footer */
+/*-----Footer Mobile-----*/
 @media screen and (max-width: 600px) {
+  /*-----Disabled for Breakpoint-----*/
   footer nav {
     display: none;
   }
@@ -425,6 +428,7 @@ h1, h3, h4, button, p, span, a {
   }
 }
 
+/*-----Footer Desktop-----*/
 @media screen and (min-width: 600px) {
   footer {
     margin-top: 1.5rem;
